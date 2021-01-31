@@ -7,10 +7,12 @@ Based on blog-api: https://github.com/olawalejarvis/blog_api_tutorial
 - Install kubectl
 
 ## CONNECT to Postgres DB
-  - minikube start
-  - kubectl apply -f postgres-<all yaml files>.yaml
-  - kubectl get nodes minikube -o wide #to get the IP-address of the node
-  - psql -h <IP-address> -U docker -d docker --password -p 30015 #password is: docker
+```
+  minikube start
+  kubectl apply -f postgres-<all yaml files>.yaml
+  kubectl get nodes minikube -o wide #to get the IP-address of the node
+  psql -h <IP-address> -U docker -d docker --password -p 30015 #password is: docker
+```
 
 ## POSTS
 - Part 1: https://www.codementor.io/olawalealadeusi896/restful-api-with-python-flask-framework-and-postgres-db-part-1-kbrwbygx5
