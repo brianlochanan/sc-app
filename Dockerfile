@@ -13,3 +13,8 @@ ENV DATABASE_URL=postgres://name:password@houst:port/blog_api_db
 ENV export JWT_SECRET_KEY=hhgaghhgsdhdhdd
 EXPOSE 5000
 CMD pipenv run python run.py
+
+FROM postgres:13.1-alpine
+ENV POSTGRES_USER docker
+ENV POSTGRES_PASSWORD docker
+ENV POSTGRES_DB docker
